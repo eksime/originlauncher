@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>203022e2-2949-4a24-aff7-dfc181ca95a4</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>originlauncher.py</StartupFile>
+    <StartupFile>setup.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,6 +22,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="setup.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="originlauncher.py" />
   </ItemGroup>
   <PropertyGroup>

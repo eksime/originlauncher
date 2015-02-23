@@ -14,10 +14,10 @@ CloseKey(regKey)
 #xml = minidom.parse(getenv("APPDATA") + r"\origin\local.xml")
 #itemlist = xml.getElementsByTagName('Setting')
 
-for s in itemlist :
-    if s.attributes["key"].value == "DownloadInPlaceDir":
-        originGamesDir = s.attributes["value"].value
-        break
+#for s in itemlist :
+#    if s.attributes["key"].value == "DownloadInPlaceDir":
+#        originGamesDir = s.attributes["value"].value
+#        break
 
 proc = Popen([originDir + "Origin.exe", r"origin://launchgame/OFB-EAST:43437"])
 origin = Process(proc.pid)
